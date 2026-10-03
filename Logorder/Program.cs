@@ -13,5 +13,5 @@ foreach (var line in File.ReadLines(fileinfo.FullName))
 {
     var json = JsonSerializer.Deserialize<JsonObject>(line);
     Console.WriteLine(json);
+    Console.WriteLine(json["timestamp"]);
 }
-// hello
